@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTFs/Billing Challenge - THM.md",
+                "file": "Studies/OWASP Top 10.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Billing Challenge - THM"
+              "title": "OWASP Top 10"
             }
           }
         ]
@@ -168,8 +168,9 @@
   },
   "active": "2fa9d85fbee318df",
   "lastOpenFiles": [
-    "Studies/SQL Injections/SQL Commands.md",
     "CTFs/Billing Challenge - THM.md",
+    "Studies/OWASP Top 10.md",
+    "Studies/SQL Injections/SQL Commands.md",
     "CTFs/Untitled",
     "Studies/SQL Injections",
     "Welcome.md",
