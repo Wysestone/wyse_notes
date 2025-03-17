@@ -515,6 +515,35 @@ able to gain access to admin page by using X-forwarded-for and the IP obtained f
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+
+ ####Nikto
+
+ nikto -host http://10.129.105.118
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Target IP:          10.129.105.118
++ Target Hostname:    10.129.105.118
++ Target Port:        80
++ Start Time:         2025-03-17 07:13:34 (GMT-5)
+---------------------------------------------------------------------------
++ Server: Microsoft-IIS/10.0
++ /: Retrieved x-powered-by header: PHP/7.3.7.
++ /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
++ /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ OPTIONS: Allowed HTTP Methods: OPTIONS, TRACE, GET, HEAD, POST .
++ OPTIONS: Public HTTP Methods: OPTIONS, TRACE, GET, HEAD, POST .
++ /admin.php?en_log_id=0&action=config: EasyNews version 4.3 allows remote admin access. This PHP file should be protected. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5412
++ /admin.php?en_log_id=0&action=users: EasyNews version 4.3 allows remote admin access. This PHP file should be protected. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5412
++ /admin.php: This might be interesting.
++ /LICENSE.txt: License file found may identify site software.
++ /license.txt: License file found may identify site software.
++ /LICENSE.TXT: License file found may identify site software.
++ 8102 requests: 0 error(s) and 11 item(s) reported on remote host
++ End Time:           2025-03-17 07:15:08 (GMT-5) (94 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
 </body>
 
 </html>
