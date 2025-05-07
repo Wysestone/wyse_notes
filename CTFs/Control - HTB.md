@@ -548,4 +548,72 @@ able to gain access to admin page by using X-forwarded-for and the IP obtained f
 
 </html>
 
+─[us-dedivip-1]─[10.10.14.221]─[wysestone@htb-odsa0kttht]─[~]
+└──╼ [★]$ feroxbuster -u http://10.129.68.43 -w /usr/share/wordlists/seclists/Discovery/Web-Content/common.txt -H X-Forwarded-For:192.168.4.28 --depth 2 -x pdf -x js,html -x php txt json,docx
+                                                                                                                                                                                                                                                              
+ ___  ___  __   __     __      __         __   ___
+|__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
+|    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
+by Ben "epi" Risher 🤓                 ver: 2.11.0
+───────────────────────────┬──────────────────────
+ 🎯  Target Url            │ http://10.129.68.43
+ 🚀  Threads               │ 50
+ 📖  Wordlist              │ /usr/share/wordlists/seclists/Discovery/Web-Content/common.txt
+ 👌  Status Codes          │ All Status Codes!
+ 💥  Timeout (secs)        │ 7
+ 🦡  User-Agent            │ feroxbuster/2.11.0
+ 🤯  Header                │ X-Forwarded-For: 192.168.4.28
+ 🔎  Extract Links         │ true
+ 💲  Extensions            │ [pdf, js, html, php, txt, json, docx]
+ 🏁  HTTP methods          │ [GET]
+ 🔃  Recursion Depth       │ 2
+───────────────────────────┴──────────────────────
+ 🏁  Press [ENTER] to use the Scan Management Menu™
+──────────────────────────────────────────────────
+404      GET       29l       95w     1245c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+200      GET        2l       23w      831c http://10.129.68.43/assets/js/jquery.scrolly.min.js
+200      GET       89l      238w     3145c http://10.129.68.43/index.php
+200      GET      587l     1232w    12433c http://10.129.68.43/assets/js/util.js
+200      GET       15l       34w      256c http://10.129.68.43/assets/css/noscript.css
+200      GET      250l      481w     4836c http://10.129.68.43/assets/js/main.js
+200      GET        2l       39w     5106c http://10.129.68.43/assets/js/jquery.dropotron.min.js
+200      GET      187l      706w     7867c http://10.129.68.43/about.php
+200      GET        2l       51w     1851c http://10.129.68.43/assets/js/browser.min.js
+200      GET        2l       37w     2257c http://10.129.68.43/assets/js/jquery.scrollex.min.js
+200      GET        2l       87w     2439c http://10.129.68.43/assets/js/breakpoints.min.js
+200      GET       25l       55w      943c http://10.129.68.43/assets/js/functions.js
+200      GET      369l     1127w   134268c http://10.129.68.43/images/pic01.jpg
+200      GET     4111l     7901w    73447c http://10.129.68.43/assets/css/main.css
+200      GET        2l     1276w    88145c http://10.129.68.43/assets/js/jquery.min.js
+200      GET      154l      466w     7933c http://10.129.68.43/admin.php
+200      GET       89l      238w     3145c http://10.129.68.43/
+403      GET       29l       92w     1233c http://10.129.68.43/images/
+403      GET       29l       92w     1233c http://10.129.68.43/assets/
+200      GET       48l      181w     1656c http://10.129.68.43/assets/js/checkValues.js
+200      GET        0l        0w        0c http://10.129.68.43/create_category.php
+200      GET       70l      131w     2079c http://10.129.68.43/search_products.php
+200      GET      154l      466w     7933c http://10.129.68.43/Admin.php
+200      GET        0l        0w        0c http://10.129.68.43/create_product.php
+200      GET      154l      466w     7933c http://10.129.68.43/ADMIN.php
+200      GET     1394l     1917w    45812c http://10.129.68.43/images/pic04.jpg
+200      GET      511l     2728w    53983c http://10.129.68.43/images/pic03.jpg
+301      GET        2l       10w      150c http://10.129.68.43/Images => http://10.129.68.43/Images/
+200      GET      798l     2952w   348727c http://10.129.68.43/images/bg.jpg
+200      GET      187l      706w     7867c http://10.129.68.43/About.php
+200      GET       89l      238w     3145c http://10.129.68.43/Index.php
+200      GET       63l     2733w    17128c http://10.129.68.43/LICENSE.txt
+301      GET        2l       10w      150c http://10.129.68.43/assets => http://10.129.68.43/assets/
+301      GET        2l       10w      154c http://10.129.68.43/assets/css => http://10.129.68.43/assets/css/
+200      GET        0l        0w        0c http://10.129.68.43/database.php
+301      GET        2l       10w      150c http://10.129.68.43/images => http://10.129.68.43/images/
+301      GET        2l       10w      153c http://10.129.68.43/assets/js => http://10.129.68.43/assets/js/
+200      GET       63l     2733w    17128c http://10.129.68.43/license.txt
+301      GET        2l       10w      151c http://10.129.68.43/uploads => http://10.129.68.43/uploads/
+200      GET        1l        1w        6c http://10.129.68.43/uploads/shell.php
+[####################] - 31s   189288/189288  0s      found:39      errors:0      
+[####################] - 20s    37792/37792   1860/s  http://10.129.68.43/ 
+[####################] - 20s    37792/37792   1870/s  http://10.129.68.43/images/ 
+[####################] - 20s    37792/37792   1857/s  http://10.129.68.43/assets/ 
+[####################] - 20s    37792/37792   1850/s  http://10.129.68.43/Images/ 
+[####################] - 14s    37792/37792   2746/s  http://10.129.68.43/uploads/  
 
