@@ -617,3 +617,19 @@ by Ben "epi" Risher 🤓                 ver: 2.11.0
 [####################] - 20s    37792/37792   1850/s  http://10.129.68.43/Images/ 
 [####################] - 14s    37792/37792   2746/s  http://10.129.68.43/uploads/  
 
+-----------------------------------------------------------------------------------------------------------------
+
+Using customer header in Burp we can use the same header for moving around behind the proxy
+
+Header name: X-Forwarded-For
+Hard-coded Value: 192.168.4.28
+Proxy settings: Created session handling rule
+	Add -> Invoke Burp Extension -> Add Custom Header -> Ok
+ 	Scope -> Tools Scope -> Check boxes
+  	Scope -> URL Scope -> Include all URLs
+![image](https://github.com/user-attachments/assets/119875e0-a527-4c3c-8db3-bf6732c215f3)
+
+
+
+
+ 	
