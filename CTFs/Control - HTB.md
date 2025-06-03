@@ -668,7 +668,8 @@ Id	Name	Quantity	Category	Price
 1	manager	*CFE3EEE434B38CBF709AD67A4DCDEA476CBA7FDA	4	5	6
 1	hector	*0E178792E8FC304A2E3133D535D38CAF1DA3CD9D	4	5	6
 
-
+https://academy.hackthebox.com/module/33/section/792
+https://www.invicti.com/blog/web-security/sql-injection-cheat-sheet/
 
 
 
